@@ -38,7 +38,7 @@ def get_stream(videoId: str):
         raise HTTPException(status_code=400, detail="videoId is required")
     
     ydl_opts = {
-        'format': 'bestaudio/best',
+        'format': 'm4a/bestaudio/best',
         'quiet': True,
         'no_warnings': True,
         'extract_flat': False,
